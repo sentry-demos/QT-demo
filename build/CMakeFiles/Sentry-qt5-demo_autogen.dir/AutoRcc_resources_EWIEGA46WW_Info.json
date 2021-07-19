@@ -1,0 +1,23 @@
+{
+	"BUILD_DIR" : "/Users/dannychakra/Sentry-qt5-demo/build/Sentry-qt5-demo_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/dannychakra/Sentry-qt5-demo/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/dannychakra/Sentry-qt5-demo/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/dannychakra/Sentry-qt5-demo",
+	"CMAKE_SOURCE_DIR" : "/Users/dannychakra/Sentry-qt5-demo",
+	"INCLUDE_DIR" : "/Users/dannychakra/Sentry-qt5-demo/build/Sentry-qt5-demo_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/dannychakra/Sentry-qt5-demo/assets/sentry-pattern.png",
+		"/Users/dannychakra/Sentry-qt5-demo/assets/sentry-glyph-black.png"
+	],
+	"LOCK_FILE" : "/Users/dannychakra/Sentry-qt5-demo/build/CMakeFiles/Sentry-qt5-demo_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/Users/dannychakra/Qt/5.12.11/clang_64/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/dannychakra/Sentry-qt5-demo/build/CMakeFiles/Sentry-qt5-demo_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/dannychakra/Sentry-qt5-demo/resources.qrc",
+	"VERBOSITY" : 0
+}

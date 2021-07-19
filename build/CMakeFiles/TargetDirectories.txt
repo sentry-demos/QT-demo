@@ -1,0 +1,4 @@
+/Users/dannychakra/Sentry-qt5-demo/build/CMakeFiles/rebuild_cache.dir
+/Users/dannychakra/Sentry-qt5-demo/build/CMakeFiles/edit_cache.dir
+/Users/dannychakra/Sentry-qt5-demo/build/CMakeFiles/Sentry-qt5-demo.dir
+/Users/dannychakra/Sentry-qt5-demo/build/CMakeFiles/Sentry-qt5-demo_autogen.dir

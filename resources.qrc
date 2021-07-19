@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/new/images">
+        <file>assets/sentry-glyph-black.png</file>
+        <file>assets/sentry-pattern.png</file>
+    </qresource>
+</RCC>

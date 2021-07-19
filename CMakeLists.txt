@@ -11,9 +11,6 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-#list(APPEND CMAKE_PREFIX_PATH "/Users/dannychakra/Sentry-qt5-demo/sentry-native/install")
-#list(APPEND CMAKE_PREFIX_PATH "/Users/dannychakra/Qt/5.12.11/clang_64/lib/cmake/Qt5")
-
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 

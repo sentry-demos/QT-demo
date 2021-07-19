@@ -40,8 +40,6 @@ upload_debug_files:
 	sentry-cli upload-dif --org testorg-az --project $(SENTRY_PROJECT) --wait --include-sources bin/
 
 clean:
-	rm -rf ./bin/Sen*
-	rm -rf ./bin/crash*
-	rm -rf ./bin/libsent*
+	rm -rf ./bin
 	rm -rf ./build
 	rm -rf ./sentry-db

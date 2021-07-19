@@ -1,6 +1,7 @@
 #!/bin/bash
 
 Make clean 
+mkdir bin
 Make
 cd build
 # builds qt application demo 

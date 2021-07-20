@@ -45,12 +45,12 @@ sentry_DIR="/path/to/Qt-demo/sentry-native/install"
 
 ### Makefile adjustment
 Inside *Qt-demo/Makefile* modify the first 2 lines to your Sentry **Organization Slug** and **Project Name** respectivley. Both can be found in [Sentry.io](www.sentry.io) under Settings.
-<img src="assets/readme/sc-makefile.png" width=100%>
+<img src="assets/Readme/sc-makefile.png" width=100%>
 
 ### DSN key
 
 Inside *Qt-demo/main.cpp* modify `sentry_options_set_dsn()` to your project's DSN key. You can also set **enviroment** and **release** if need be.<br>
-<img src="assets/readme/sc-main.png" width=100%>
+<img src="assets/Readme/sc-main.png" width=100%>
 
 ### Enable Suspect Commits
 

@@ -6,7 +6,7 @@ mkdir bin
 # make all
 make
 # copies exec to bin directory
-cp build/Sentry-qt5-demo /bin
+cp build/Sentry-qt5-demo bin
 # setup suspect commit
 make setup_release
 # uploads debug files

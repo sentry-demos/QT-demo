@@ -98,4 +98,4 @@ make bin/example // or make all. start building again, with the newer Release of
 
 ## Gif
 
-![gif](screenshots/sentry-native-crash-final.gif)
+![gif](assets/Readme/qt-demo-gif.gif)

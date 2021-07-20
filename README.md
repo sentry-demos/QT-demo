@@ -98,4 +98,4 @@ make bin/example // or make all. start building again, with the newer Release of
 
 ## Gif
 
-![gif](assets/Readme/qt-demo-gif.gif)
+![gif](assets/Readme/qt-demo.gif)

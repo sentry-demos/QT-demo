@@ -94,12 +94,7 @@ make bin/example // or make all. start building again, with the newer Release of
 ```
 
 ## Troubleshooting
-
-adding debug symbols for Qt to symbolicate Qt functions
-
-If the standalone distribution package doesn't fit your needs, then go to https://github.com/getsentry/sentry-native#development
-
-sentry-native in the news https://blog.sentry.io/2019/09/26/fixing-native-apps-with-sentry
+1. Adding Qt debug symbol files to sentry so you can symbolicate
 
 ## Gif
 

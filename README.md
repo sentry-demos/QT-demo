@@ -67,9 +67,10 @@ Install Github integrations and add your repository. More can be found on our [G
 ### What's Happening:
  
 `make` or `make all` has several targets:
-- Building sentry-native sdk with options `SENTRY_INTEGRATION_QT=YES` and `SENTRY_BACKEND=CRASHPAD` more can be found in [Compile-time options](https://github.com/getsentry/sentry-native/tree/290fa46ec868b5f23f720fff253c1da8746ce249#compile-time-options)
-- Generating Sentry dynamic library and crashpad handler 
-- Generating the builds directory for the Qt application 
+- Generate build directory of sentry SDK with options`SENTRY_INTEGRATION_QT=YES` and `SENTRY_BACKEND=CRASHPAD` more can be found in [Compile-time options](https://github.com/getsentry/sentry-native/tree/290fa46ec868b5f23f720fff253c1da8746ce249#compile-time-options)
+- Build sentry SDK and crashpad handler
+- Install the resulting artifacts into a specific prefix
+- Generate and build build directory for the Qt application 
 
 `make setup_release` creates a Sentry Release and associates git commits
 
@@ -78,8 +79,7 @@ Install Github integrations and add your repository. More can be found on our [G
 **`run.sh` actions:**
 1. creates bin directory
 2. `make all`
-3. `make` on build directory for Qt app
-4. copies exec generated to bin 
+4. copies qt app to bin 
 5. `make setup_release`
 6. `make upload_debug_files` found in bin directory
 

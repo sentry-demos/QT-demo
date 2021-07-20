@@ -1,14 +1,12 @@
 #!/bin/bash
 
-Make clean 
+make clean
+# creates bin directory 
 mkdir bin
-Make
-cd build
-# builds qt application demo 
-Make
-# adds exec to bin file
-cp Sentry-qt5-demo ../bin
-cd ..
+# make all
+make
+# copies exec to bin directory
+cp build/Sentry-qt5-demo /bin
 # setup suspect commit
 make setup_release
 # uploads debug files

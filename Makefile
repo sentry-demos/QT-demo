@@ -8,6 +8,7 @@ all: bin
 
 bin: prereqs
 	$(CMAKE) -B build -D CMAKE_BUILD_TYPE=DEBUG
+	$(CMAKE) --build build
 
 prereqs: bin/libsentry.dylib bin/crashpad_handler
 

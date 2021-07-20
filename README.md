@@ -6,7 +6,6 @@ This project is a demo implementation of **sentry-native** in a QT application, 
 The **Official Sentry Documentation** for Qt is at https://docs.sentry.io/platforms/native/guides/qt
 
 ## Setup
-----------
 | dependency    |    version     |
 | ------------- | :------------: |
 | sentry-native |     0.4.11     |
@@ -37,7 +36,6 @@ follow this link https://www.qt.io/download to install **Qt Installer** and cont
 Qt depends on Xcode, follow this link to download Xcode https://developer.apple.com/xcode/
 
 ## Configuration 
--------------
 ### Enviroment Variables
 ```cmake
 CMAKE_PREFIX_PATH="/path/to/Qt/5.12.11/clang_64/lib/cmake/Qt5"
@@ -59,7 +57,6 @@ Inside *Qt-demo/main.cpp* modify `sentry_options_set_dsn()` to your project's DS
 In sentry.io under *Settings -> Integrations -> Github* 
 Install Github integrations and add your repository. More can be found on our [Github Documentation](https://docs.sentry.io/product/integrations/source-code-mgmt/github/)
 ## Run
-------------
 1. `git clone --recurse-submodules https://github.com/dachakra/QT-demo.git`
 2. Makefile adjustment
 3. Add enviroment variables 
@@ -67,7 +64,6 @@ Install Github integrations and add your repository. More can be found on our [G
 
 
 ## Technical Notes  
---------------
 ### What's Happening:
  
 `make` or `make all` has several targets:

@@ -1,7 +1,7 @@
 
 ## Overviews
 
-This project is a demo implementation of **sentry-native** in a QT application, the Sentry SDK for Native Crash Reporting. The demo produces a native crash that gets captured by sentry-native and sent to Sentry.io This demo uses sentry-native in its packaged release form - it is referenced as a submodule. You can also download it separately here https://github.com/getsentry/sentry-native as a distribution zip.
+This project is a demo implementation of **sentry-native with Qt integration**, the Sentry SDK for Native Crash Reporting. The demo produces a native crash that gets captured by sentry-native and sent to Sentry.io This demo uses sentry-native in its packaged release form - it is referenced as a submodule. You can also download it separately here https://github.com/getsentry/sentry-native as a distribution zip.
 
 The **Official Sentry Documentation** for Qt is at https://docs.sentry.io/platforms/native/guides/qt
 
@@ -9,7 +9,7 @@ The **Official Sentry Documentation** for Qt is at https://docs.sentry.io/platfo
 | dependency    |    version     |
 | ------------- | :------------: |
 | sentry-native |     0.4.11     |
-| sentry-cli    |     1.4.9      |
+| sentry-cli    |     1.66.0     |
 | Qt            |     5.12.11    |
 | Xcode         |     12.5.1     |
 | cmake         |     3.20.5     |

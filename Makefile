@@ -28,13 +28,13 @@ sentry-native/build/Makefile:
 	$(CMAKE) --build sentry-native/build --config RelWithDebInfo --parallel 
 	$(CMAKE) --install sentry-native/build --prefix sentry-native/install
 
-# # SENTRYY
-# setup_release: create_release associate_commits
-# create_release:
-# 	sentry-cli releases -o $(SENTRY_ORG) new -p $(SENTRY_PROJECT) $(VERSION)
+# SENTRYY
+setup_release: create_release associate_commits
+create_release:
+	sentry-cli releases -o $(SENTRY_ORG) new -p $(SENTRY_PROJECT) $(VERSION)
 
-#  associate_commits:
-#  	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) set-commits $(VERSION) --auto
+associate_commits:
+	sentry-cli releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) set-commits $(VERSION) --auto
 
 upload_debug_files:
 	sentry-cli upload-dif --org testorg-az --project $(SENTRY_PROJECT) --wait --include-sources bin/

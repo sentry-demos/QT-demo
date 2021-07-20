@@ -45,7 +45,7 @@ sentry_DIR="/path/to/Qt-demo/sentry-native/install"
 
 ### Makefile adjustment
 Inside *Qt-demo/Makefile* modify the first 2 lines to your Sentry **Organization Slug** and **Project Name** respectivley. Both can be found in [Sentry.io](www.sentry.io) under Settings.
-<img src="assets/Readme/sc-Makefile.png" width=100%>
+<img src="/assets/Readme/sc-Makefile.png" width=100%>
 
 ### DSN key
 

@@ -30,7 +30,7 @@ follow this link https://www.qt.io/download to install **Qt Installer** and cont
 
 **Note**: for this demo these 2 components should suffice 
 
-<img src="assets/readme/sc-qt-installer.png" width=30%>
+<img src="assets/Readme/sc-qt-installer.png" width=30%>
 
 <ins>Xcode</ins>
 
@@ -47,14 +47,17 @@ sentry_DIR="/path/to/Qt-demo/sentry-native/install"
 
 ### Makefile adjustment
 Inside *Qt-demo/Makefile* modify the first 2 lines to your Sentry **Organization Slug** and **Project Name** respectivley. Both can be found in [Sentry.io](www.sentry.io) under Settings.
-<img src="assets/readme/sc-makefile.png" width=60%>
+<img src="assets/readme/sc-makefile.png" width=100%>
 
 ### DSN key
 
 Inside *Qt-demo/main.cpp* modify `sentry_options_set_dsn()` to your project's DSN key. You can also set **enviroment** and **release** if need be.<br>
-<img src="assets/readme/sc-main.png" width=50%>
+<img src="assets/readme/sc-main.png" width=100%>
 
+### Enable Suspect Commits
 
+In sentry.io under *Settings -> Integrations -> Github* 
+Install Github integrations and add your repository. More can be found on our [Github Documentation](https://docs.sentry.io/product/integrations/source-code-mgmt/github/)
 ## Run
 ------------
 1. `git clone --recurse-submodules https://github.com/dachakra/QT-demo.git`
@@ -76,7 +79,7 @@ Inside *Qt-demo/main.cpp* modify `sentry_options_set_dsn()` to your project's DS
 
 `make upload_debug_files` uploads your symbols to Project Settings > Debug Files https://sentry.io/settings/${YOUR_ORG}/projects/${PROJECT}/debug-symbols/. You can also access your symbols from a Symbol Server https://docs.sentry.io/workflow/debug-files/#symbol-servers
 
-**`run.sh` steps:**
+**`run.sh` actions:**
 1. creates bin directory
 2. `make all`
 3. `make` on build directory for Qt app

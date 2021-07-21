@@ -78,7 +78,7 @@ The Qt app consists of 2 buttons:
 * Calls functuon `startup()` from *eventCrashes.h*
 
 **Sentry Event:**
-* Generates a custon sentry crash event
+* Generates a custom sentry crash event
 * Breadcrumbs:
     * sentryCrashButton Pressed
     * Configuring GPU Context

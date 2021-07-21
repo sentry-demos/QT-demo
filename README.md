@@ -25,7 +25,7 @@ The **Official Sentry Documentation** for Qt is at https://docs.sentry.io/platfo
 
 <ins>Qt</ins>
 
-follow this link https://www.qt.io/download to install **Qt Installer** and continue setting up Qt.
+Follow this link https://www.qt.io/download, navigate to **Go Open Source -> Download the Qt Online Installer -> Download** 
 
 **Note**: for this demo these 2 components should suffice 
 
@@ -62,6 +62,30 @@ Install Github integrations and add your repository. More can be found on our [G
 3. Add enviroment variables 
 4. `bash run.sh`
 
+## Expected Behavior 
+
+The Qt app consists of 2 buttons: 
+
+<img src="assets/Readme/sc-qt-demo.png" width=50%>
+
+
+**Native Crash:** 
+* Generates a segmentation fault which crashes the application
+* Breadcrumbs:
+    * NativeCrashButton Pressed
+    * Setting user to John Doe
+    * Initalizing Memory
+* Calls functuon `startup()` from *eventCrashes.h*
+
+**Sentry Event:**
+* Generates a custon sentry crash event
+* Breadcrumbs:
+    * sentryCrashButton Pressed
+    * Configuring GPU Context
+    * Sentry Message Capture
+* Calls function `send_event()` from *eventCrashes.h*
+
+**Note:** You can add more breadcrumbs by using Qt Logger.
 
 ## Technical Notes  
 ### What's Happening:
@@ -70,7 +94,7 @@ Install Github integrations and add your repository. More can be found on our [G
 - Generate build directory of sentry SDK with options`SENTRY_INTEGRATION_QT=YES` and `SENTRY_BACKEND=CRASHPAD` more can be found in [Compile-time options](https://github.com/getsentry/sentry-native/tree/290fa46ec868b5f23f720fff253c1da8746ce249#compile-time-options)
 - Build sentry SDK and crashpad handler
 - Install the resulting artifacts into a specific prefix
-- Generate and build build directory for the Qt application 
+- Generate and build the build directory for the Qt application 
 
 `make setup_release` creates a Sentry Release and associates git commits
 

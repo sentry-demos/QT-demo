@@ -21,7 +21,7 @@ bin/crashpad_handler: sentry-makefile
 	$(CMAKE) --build sentry-native/build --parallel --target crashpad_handler
 	cp sentry-native/build/crashpad_build/handler/crashpad_handler bin
 	cp -R sentry-native/build/crashpad_build/handler/crashpad_handler.dSYM bin
-	
+
 sentry-makefile: sentry-native/build/Makefile
 
 sentry-native/build/Makefile:

@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 make clean
 # creates bin directory 
 mkdir bin

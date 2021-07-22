@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
 //   configure sentry project here
     sentry_options_set_environment(options, "Production");
-    sentry_options_set_dsn(options, "https://5edbb4522ecf438d992db9ac30b5453f@o87286.ingest.sentry.io/5863746");
+    sentry_options_set_dsn(options, "https://yourdsn@sentry.io/1234567");
     sentry_options_set_release(options, "1.0");
    
 #ifdef SENTRY_RELEASE

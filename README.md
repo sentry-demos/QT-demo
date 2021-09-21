@@ -57,7 +57,7 @@ Inside *Qt-demo/main.cpp* modify `sentry_options_set_dsn()` to your project's DS
 In sentry.io under *Settings -> Integrations -> Github* 
 Install Github integrations and add your repository. More can be found on our [Github Documentation](https://docs.sentry.io/product/integrations/source-code-mgmt/github/)
 ## Run
-1. `git clone --recurse-submodules https://github.com/dachakra/QT-demo.git`
+1. `git clone --recurse-submodules https://github.com/sentry-demos/QT-demo.git`
 2. Makefile adjustment
 3. Add enviroment variables 
 4. `bash run.sh`
